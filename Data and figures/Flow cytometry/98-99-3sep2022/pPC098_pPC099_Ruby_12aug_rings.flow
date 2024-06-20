@@ -1,0 +1,3334 @@
+- !workflow-item;4
+  channels:
+  - APC_A
+  - APC_A700_A
+  - APC_A700_H
+  - APC_A750_A
+  - APC_A750_H
+  - APC_H
+  - FITC_A
+  - FITC_H
+  - FSC_A
+  - FSC_H
+  - FSC_Width
+  - KO525_A
+  - KO525_H
+  - PB450_A
+  - PB450_H
+  - PC5_5_A
+  - PC5_5_H
+  - PE_A
+  - PE_H
+  - SSC_A
+  - SSC_H
+  - Time
+  conditions:
+    Inducer: !pandas-series;3
+      data:
+      - false
+      - true
+      dtype: bool
+      index: !pandas-int64index;1
+        name: null
+        values:
+        - 0
+        - 1
+    Line: !pandas-series;3
+      data:
+      - NF54
+      - RBC
+      - pHSP86-SV40_LacI
+      - pmRPL2-SV40_TetR
+      dtype: category
+      index: !pandas-int64index;1
+        name: null
+        values:
+        - 2
+        - 3
+        - 1
+        - 0
+    Replicate: !pandas-series;3
+      data:
+      - 0.0
+      - 1.0
+      - 2.0
+      - 3.0
+      dtype: float64
+      index: !pandas-int64index;1
+        name: null
+        values:
+        - 1
+        - 0
+        - 2
+        - 3
+    Stage: !pandas-series;3
+      data:
+      - Mix
+      - Rings
+      dtype: category
+      index: !pandas-int64index;1
+        name: null
+        values:
+        - 1
+        - 0
+    VDC_Ruby: !pandas-series;3
+      data:
+      - true
+      dtype: bool
+      index: !pandas-int64index;1
+        name: null
+        values:
+        - 0
+  current_view: &id001 !scatterplot;2
+    current_plot: null
+    huefacet: Line
+    huescale: linear
+    plot_params: !scatterplot-params;1
+      alpha: 0.05
+      col_wrap: null
+      despine: true
+      huelabel: ''
+      legend: true
+      marker: o
+      max_quantile: 1.0
+      min_quantile: 0.001
+      s: 1.0
+      sharex: true
+      sharey: true
+      sns_context: paper
+      sns_style: whitegrid
+      title: ''
+      xlabel: ''
+      xlim: !!python/tuple
+      - 100000.0
+      - 10000000.0
+      ylabel: ''
+      ylim: !!python/tuple
+      - null
+      - null
+    plotfacet: ''
+    subset_list:
+    - !bool-subset;1
+      name: Inducer
+      selected_f: true
+      selected_t: true
+      values:
+      - false
+      - true
+    - !category-subset;1
+      name: Line
+      selected:
+      - RBC
+      - pHSP86-SV40_LacI
+      - NF54
+      - pmRPL2-SV40_TetR
+      values:
+      - NF54
+      - RBC
+      - pHSP86-SV40_LacI
+      - pmRPL2-SV40_TetR
+    - !range-subset;1
+      high: 1.0
+      low: 0.0
+      name: Replicate
+      values:
+      - 0.0
+      - 1.0
+      - 2.0
+      - 3.0
+    - !category-subset;1
+      name: Stage
+      selected:
+      - Mix
+      - Rings
+      values:
+      - Mix
+      - Rings
+    - !bool-subset;1
+      name: VDC_Ruby
+      selected_f: false
+      selected_t: true
+      values:
+      - true
+    xchannel: FSC_A
+    xfacet: ''
+    xscale: log
+    ychannel: APC_A
+    yfacet: ''
+    yscale: log
+  metadata:
+    APC_A:
+      fcs_name: APC-A
+      range: 16777216.0
+      type: channel
+    APC_A700_A:
+      fcs_name: APC-A700-A
+      range: 16777216.0
+      type: channel
+    APC_A700_H:
+      fcs_name: APC-A700-H
+      range: 16777216.0
+      type: channel
+    APC_A750_A:
+      fcs_name: APC-A750-A
+      range: 16777216.0
+      type: channel
+    APC_A750_H:
+      fcs_name: APC-A750-H
+      range: 16777216.0
+      type: channel
+    APC_H:
+      fcs_name: APC-H
+      range: 16777216.0
+      type: channel
+    FITC_A:
+      fcs_name: FITC-A
+      range: 16777216.0
+      type: channel
+    FITC_H:
+      fcs_name: FITC-H
+      range: 16777216.0
+      type: channel
+    FSC_A:
+      fcs_name: FSC-A
+      range: 16777216.0
+      type: channel
+    FSC_H:
+      fcs_name: FSC-H
+      range: 16777216.0
+      type: channel
+    FSC_Width:
+      fcs_name: FSC-Width
+      range: 16777216.0
+      type: channel
+    Inducer:
+      dtype: bool
+      experiment: true
+      type: condition
+      values:
+      - 'Unpicklable: <class ''numpy.bool_''>'
+      - 'Unpicklable: <class ''numpy.bool_''>'
+      values_type: boolean
+    KO525_A:
+      fcs_name: KO525-A
+      range: 16777216.0
+      type: channel
+    KO525_H:
+      fcs_name: KO525-H
+      range: 16777216.0
+      type: channel
+    Line:
+      dtype: category
+      experiment: true
+      type: condition
+      values:
+      - NF54
+      - RBC
+      - pHSP86-SV40_LacI
+      - pmRPL2-SV40_TetR
+      values_type: categorical
+    PB450_A:
+      fcs_name: PB450-A
+      range: 16777216.0
+      type: channel
+    PB450_H:
+      fcs_name: PB450-H
+      range: 16777216.0
+      type: channel
+    PC5_5_A:
+      fcs_name: PC5.5-A
+      range: 16777216.0
+      type: channel
+    PC5_5_H:
+      fcs_name: PC5.5-H
+      range: 16777216.0
+      type: channel
+    PE_A:
+      fcs_name: PE-A
+      range: 16777216.0
+      type: channel
+    PE_H:
+      fcs_name: PE-H
+      range: 16777216.0
+      type: channel
+    Replicate:
+      dtype: float64
+      experiment: true
+      type: condition
+      values:
+      - 0.0
+      - 1.0
+      - 2.0
+      - 3.0
+      values_type: numeric
+    SSC_A:
+      fcs_name: SSC-A
+      range: 16777216.0
+      type: channel
+    SSC_H:
+      fcs_name: SSC-H
+      range: 16777216.0
+      type: channel
+    Stage:
+      dtype: category
+      experiment: true
+      type: condition
+      values:
+      - Mix
+      - Rings
+      values_type: categorical
+    Time:
+      fcs_name: Time
+      range: 900000000.0
+      type: channel
+    VDC_Ruby:
+      dtype: bool
+      experiment: true
+      type: condition
+      values:
+      - 'Unpicklable: <class ''numpy.bool_''>'
+      values_type: boolean
+    ignore_v: []
+    name_metadata: $PnS
+  operation: !import;3
+    channels_list:
+    - !import-channel;1
+      channel: APC-A
+      name: APC_A
+    - !import-channel;1
+      channel: APC-A700-A
+      name: APC_A700_A
+    - !import-channel;1
+      channel: APC-A700-H
+      name: APC_A700_H
+    - !import-channel;1
+      channel: APC-A750-A
+      name: APC_A750_A
+    - !import-channel;1
+      channel: APC-A750-H
+      name: APC_A750_H
+    - !import-channel;1
+      channel: APC-H
+      name: APC_H
+    - !import-channel;1
+      channel: FITC-A
+      name: FITC_A
+    - !import-channel;1
+      channel: FITC-H
+      name: FITC_H
+    - !import-channel;1
+      channel: FSC-A
+      name: FSC_A
+    - !import-channel;1
+      channel: FSC-H
+      name: FSC_H
+    - !import-channel;1
+      channel: FSC-Width
+      name: FSC_Width
+    - !import-channel;1
+      channel: KO525-A
+      name: KO525_A
+    - !import-channel;1
+      channel: KO525-H
+      name: KO525_H
+    - !import-channel;1
+      channel: PB450-A
+      name: PB450_A
+    - !import-channel;1
+      channel: PB450-H
+      name: PB450_H
+    - !import-channel;1
+      channel: PC5.5-A
+      name: PC5_5_A
+    - !import-channel;1
+      channel: PC5.5-H
+      name: PC5_5_H
+    - !import-channel;1
+      channel: PE-A
+      name: PE_A
+    - !import-channel;1
+      channel: PE-H
+      name: PE_H
+    - !import-channel;1
+      channel: SSC-A
+      name: SSC_A
+    - !import-channel;1
+      channel: SSC-H
+      name: SSC_H
+    - !import-channel;1
+      channel: Time
+      name: Time
+    conditions:
+      Inducer: bool
+      Line: category
+      Replicate: float
+      Stage: category
+      VDC_Ruby: bool
+    events: null
+    name_metadata: null
+    tubes:
+    - !tube;1
+      conditions:
+        Inducer: false
+        Line: pmRPL2-SV40_TetR
+        Replicate: 1.0
+        Stage: Rings
+        VDC_Ruby: true
+      file: /Users/palo/Desktop/pPC098_pPC099_rings_trophs_12aug2022/98-0atc-1.fcs
+    - !tube;1
+      conditions:
+        Inducer: true
+        Line: pmRPL2-SV40_TetR
+        Replicate: 1.0
+        Stage: Rings
+        VDC_Ruby: true
+      file: /Users/palo/Desktop/pPC098_pPC099_rings_trophs_12aug2022/98-1atc-1.fcs
+    - !tube;1
+      conditions:
+        Inducer: false
+        Line: pHSP86-SV40_LacI
+        Replicate: 1.0
+        Stage: Rings
+        VDC_Ruby: true
+      file: /Users/palo/Desktop/pPC098_pPC099_rings_trophs_12aug2022/99-0IPTG-1.fcs
+    - !tube;1
+      conditions:
+        Inducer: true
+        Line: pHSP86-SV40_LacI
+        Replicate: 1.0
+        Stage: Rings
+        VDC_Ruby: true
+      file: /Users/palo/Desktop/pPC098_pPC099_rings_trophs_12aug2022/99-1IPTG-1.fcs
+    - !tube;1
+      conditions:
+        Inducer: false
+        Line: NF54
+        Replicate: 0.0
+        Stage: Mix
+        VDC_Ruby: true
+      file: /Users/palo/Desktop/pPC098_pPC099_rings_trophs_12aug2022/NF54_vdcruby1.fcs
+    - !tube;1
+      conditions:
+        Inducer: false
+        Line: RBC
+        Replicate: 0.0
+        Stage: Mix
+        VDC_Ruby: true
+      file: /Users/palo/Desktop/pPC098_pPC099_rings_trophs_12aug2022/RBC3.fcs
+    - !tube;1
+      conditions:
+        Inducer: false
+        Line: pmRPL2-SV40_TetR
+        Replicate: 2.0
+        Stage: Rings
+        VDC_Ruby: true
+      file: /Users/palo/Desktop/pPC098_pPC099_rings_trophs_12aug2022/98-0atc-2.fcs
+    - !tube;1
+      conditions:
+        Inducer: false
+        Line: pmRPL2-SV40_TetR
+        Replicate: 3.0
+        Stage: Rings
+        VDC_Ruby: true
+      file: /Users/palo/Desktop/pPC098_pPC099_rings_trophs_12aug2022/98-0atc-3.fcs
+    - !tube;1
+      conditions:
+        Inducer: true
+        Line: pmRPL2-SV40_TetR
+        Replicate: 2.0
+        Stage: Rings
+        VDC_Ruby: true
+      file: /Users/palo/Desktop/pPC098_pPC099_rings_trophs_12aug2022/98-1atc-2.fcs
+    - !tube;1
+      conditions:
+        Inducer: true
+        Line: pmRPL2-SV40_TetR
+        Replicate: 3.0
+        Stage: Rings
+        VDC_Ruby: true
+      file: /Users/palo/Desktop/pPC098_pPC099_rings_trophs_12aug2022/98-1atc-3.fcs
+    - !tube;1
+      conditions:
+        Inducer: false
+        Line: pHSP86-SV40_LacI
+        Replicate: 2.0
+        Stage: Rings
+        VDC_Ruby: true
+      file: /Users/palo/Desktop/pPC098_pPC099_rings_trophs_12aug2022/99-0IPTG-2.fcs
+    - !tube;1
+      conditions:
+        Inducer: false
+        Line: pHSP86-SV40_LacI
+        Replicate: 3.0
+        Stage: Rings
+        VDC_Ruby: true
+      file: /Users/palo/Desktop/pPC098_pPC099_rings_trophs_12aug2022/99-0IPTG-3.fcs
+    - !tube;1
+      conditions:
+        Inducer: true
+        Line: pHSP86-SV40_LacI
+        Replicate: 2.0
+        Stage: Rings
+        VDC_Ruby: true
+      file: /Users/palo/Desktop/pPC098_pPC099_rings_trophs_12aug2022/99-1IPTG-2.fcs
+    - !tube;1
+      conditions:
+        Inducer: true
+        Line: pHSP86-SV40_LacI
+        Replicate: 3.0
+        Stage: Rings
+        VDC_Ruby: true
+      file: /Users/palo/Desktop/pPC098_pPC099_rings_trophs_12aug2022/99-1IPTG-3.fcs
+  statistics: {}
+  views:
+  - *id001
+  - !histogram;2
+    channel: APC_A
+    current_plot: null
+    huefacet: VDC_Ruby
+    huescale: linear
+    plot_params: !histogram-params;3
+      alpha: 0.5
+      col_wrap: null
+      density: false
+      despine: true
+      histtype: stepfilled
+      huelabel: ''
+      legend: true
+      lim: !!python/tuple
+      - null
+      - null
+      linestyle: solid
+      linewidth: null
+      max_quantile: 1.0
+      min_quantile: 0.001
+      num_bins: null
+      orientation: vertical
+      sharex: true
+      sharey: true
+      sns_context: paper
+      sns_style: whitegrid
+      title: ''
+      xlabel: ''
+      ylabel: ''
+    plotfacet: ''
+    scale: log
+    subset_list:
+    - !bool-subset;1
+      name: Inducer
+      selected_f: false
+      selected_t: false
+      values: []
+    - !category-subset;1
+      name: Line
+      selected:
+      - NF54
+      values:
+      - NF54
+      - RBC
+      - pHSP86-SV40_LacI
+      - pmRPL2-SV40_TetR
+    - !range-subset;1
+      high: 3.0
+      low: 0.0
+      name: Replicate
+      values:
+      - 0.0
+      - 1.0
+      - 2.0
+      - 3.0
+    - !category-subset;1
+      name: Stage
+      selected: []
+      values:
+      - Mix
+      - Rings
+      - Trophozoites
+    - !bool-subset;1
+      name: VDC_Ruby
+      selected_f: false
+      selected_t: false
+      values: []
+    xfacet: ''
+    yfacet: ''
+- !workflow-item;4
+  channels:
+  - APC_A
+  - APC_A700_A
+  - APC_A700_H
+  - APC_A750_A
+  - APC_A750_H
+  - APC_H
+  - FITC_A
+  - FITC_H
+  - FSC_A
+  - FSC_H
+  - FSC_Width
+  - KO525_A
+  - KO525_H
+  - PB450_A
+  - PB450_H
+  - PC5_5_A
+  - PC5_5_H
+  - PE_A
+  - PE_H
+  - SSC_A
+  - SSC_H
+  - Time
+  conditions:
+    Cells_FSC_SSC: !pandas-series;3
+      data:
+      - false
+      - true
+      dtype: bool
+      index: !pandas-int64index;1
+        name: null
+        values:
+        - 1
+        - 0
+    Inducer: !pandas-series;3
+      data:
+      - false
+      - true
+      dtype: bool
+      index: !pandas-int64index;1
+        name: null
+        values:
+        - 0
+        - 1
+    Line: !pandas-series;3
+      data:
+      - NF54
+      - RBC
+      - pHSP86-SV40_LacI
+      - pmRPL2-SV40_TetR
+      dtype: category
+      index: !pandas-int64index;1
+        name: null
+        values:
+        - 2
+        - 3
+        - 1
+        - 0
+    Replicate: !pandas-series;3
+      data:
+      - 0.0
+      - 1.0
+      - 2.0
+      - 3.0
+      dtype: float64
+      index: !pandas-int64index;1
+        name: null
+        values:
+        - 1
+        - 0
+        - 2
+        - 3
+    Stage: !pandas-series;3
+      data:
+      - Mix
+      - Rings
+      dtype: category
+      index: !pandas-int64index;1
+        name: null
+        values:
+        - 1
+        - 0
+    VDC_Ruby: !pandas-series;3
+      data:
+      - true
+      dtype: bool
+      index: !pandas-int64index;1
+        name: null
+        values:
+        - 0
+  current_view: &id003 !polygon-view;2
+    current_plot: null
+    huefacet: ''
+    op: &id002 !polygon;1
+      name: Cells_FSC_SSC
+      vertices:
+      - !!python/tuple
+        - 151194.03591505287
+        - 41238.31804520812
+      - !!python/tuple
+        - 324188.0587167583
+        - 43959.31952623429
+      - !!python/tuple
+        - 437869.84512930753
+        - 41238.31804520812
+      - !!python/tuple
+        - 596035.8088337239
+        - 70986.55351538313
+      - !!python/tuple
+        - 635577.299759828
+        - 101688.05455371975
+      - !!python/tuple
+        - 951909.2271686606
+        - 136651.30041033123
+      - !!python/tuple
+        - 1080419.072678499
+        - 200499.76732273327
+      - !!python/tuple
+        - 2064013.659465338
+        - 570847.8989528118
+      - !!python/tuple
+        - 3284857.1918088016
+        - 1638308.5323845882
+      - !!python/tuple
+        - 3502335.391902374
+        - 3881690.7011510567
+      - !!python/tuple
+        - 2508855.432384009
+        - 4554030.873757872
+      - !!python/tuple
+        - 729488.3407093252
+        - 3975824.299464699
+      - !!python/tuple
+        - 403271.0405689665
+        - 3308612.3298433507
+      - !!python/tuple
+        - 195678.21320692002
+        - 502366.1543906999
+      - !!python/tuple
+        - 151194.03591505287
+        - 126161.32666821533
+      - !!python/tuple
+        - 126480.60408623784
+        - 53247.71957647345
+      xchannel: FSC_A
+      xscale: linear
+      ychannel: SSC_A
+      yscale: log
+    plot_params: !scatterplot-params;1
+      alpha: 0.05
+      col_wrap: null
+      despine: true
+      huelabel: ''
+      legend: true
+      marker: o
+      max_quantile: 1.0
+      min_quantile: 0.001
+      s: 1.0
+      sharex: true
+      sharey: true
+      sns_context: paper
+      sns_style: whitegrid
+      title: ''
+      xlabel: ''
+      xlim: !!python/tuple
+      - null
+      - 4000000.0
+      ylabel: ''
+      ylim: !!python/tuple
+      - 10000.0
+      - 10000000.0
+    subset_list:
+    - !bool-subset;1
+      name: Inducer
+      selected_f: true
+      selected_t: true
+      values:
+      - false
+      - true
+    - !category-subset;1
+      name: Line
+      selected:
+      - pHSP86-SV40_LacI
+      - pmRPL2-SV40_TetR
+      values:
+      - NF54
+      - RBC
+      - pHSP86-SV40_LacI
+      - pmRPL2-SV40_TetR
+    - !range-subset;1
+      high: 2.0
+      low: 2.0
+      name: Replicate
+      values:
+      - 0.0
+      - 1.0
+      - 2.0
+      - 3.0
+    - !category-subset;1
+      name: Stage
+      selected: []
+      values:
+      - Mix
+      - Rings
+    - !bool-subset;1
+      name: VDC_Ruby
+      selected_f: false
+      selected_t: true
+      values:
+      - true
+  metadata:
+    APC_A:
+      fcs_name: APC-A
+      range: 16777216.0
+      type: channel
+    APC_A700_A:
+      fcs_name: APC-A700-A
+      range: 16777216.0
+      type: channel
+    APC_A700_H:
+      fcs_name: APC-A700-H
+      range: 16777216.0
+      type: channel
+    APC_A750_A:
+      fcs_name: APC-A750-A
+      range: 16777216.0
+      type: channel
+    APC_A750_H:
+      fcs_name: APC-A750-H
+      range: 16777216.0
+      type: channel
+    APC_H:
+      fcs_name: APC-H
+      range: 16777216.0
+      type: channel
+    Cells_FSC_SSC:
+      dtype: bool
+      type: condition
+      values:
+      - 'Unpicklable: <class ''numpy.bool_''>'
+      - 'Unpicklable: <class ''numpy.bool_''>'
+      values_type: boolean
+    FITC_A:
+      fcs_name: FITC-A
+      range: 16777216.0
+      type: channel
+    FITC_H:
+      fcs_name: FITC-H
+      range: 16777216.0
+      type: channel
+    FSC_A:
+      fcs_name: FSC-A
+      range: 16777216.0
+      type: channel
+    FSC_H:
+      fcs_name: FSC-H
+      range: 16777216.0
+      type: channel
+    FSC_Width:
+      fcs_name: FSC-Width
+      range: 16777216.0
+      type: channel
+    Inducer:
+      dtype: bool
+      experiment: true
+      type: condition
+      values:
+      - 'Unpicklable: <class ''numpy.bool_''>'
+      - 'Unpicklable: <class ''numpy.bool_''>'
+      values_type: boolean
+    KO525_A:
+      fcs_name: KO525-A
+      range: 16777216.0
+      type: channel
+    KO525_H:
+      fcs_name: KO525-H
+      range: 16777216.0
+      type: channel
+    Line:
+      dtype: category
+      experiment: true
+      type: condition
+      values:
+      - NF54
+      - RBC
+      - pHSP86-SV40_LacI
+      - pmRPL2-SV40_TetR
+      values_type: categorical
+    PB450_A:
+      fcs_name: PB450-A
+      range: 16777216.0
+      type: channel
+    PB450_H:
+      fcs_name: PB450-H
+      range: 16777216.0
+      type: channel
+    PC5_5_A:
+      fcs_name: PC5.5-A
+      range: 16777216.0
+      type: channel
+    PC5_5_H:
+      fcs_name: PC5.5-H
+      range: 16777216.0
+      type: channel
+    PE_A:
+      fcs_name: PE-A
+      range: 16777216.0
+      type: channel
+    PE_H:
+      fcs_name: PE-H
+      range: 16777216.0
+      type: channel
+    Replicate:
+      dtype: float64
+      experiment: true
+      type: condition
+      values:
+      - 0.0
+      - 1.0
+      - 2.0
+      - 3.0
+      values_type: numeric
+    SSC_A:
+      fcs_name: SSC-A
+      range: 16777216.0
+      type: channel
+    SSC_H:
+      fcs_name: SSC-H
+      range: 16777216.0
+      type: channel
+    Stage:
+      dtype: category
+      experiment: true
+      type: condition
+      values:
+      - Mix
+      - Rings
+      values_type: categorical
+    Time:
+      fcs_name: Time
+      range: 900000000.0
+      type: channel
+    VDC_Ruby:
+      dtype: bool
+      experiment: true
+      type: condition
+      values:
+      - 'Unpicklable: <class ''numpy.bool_''>'
+      values_type: boolean
+    ignore_v: []
+    name_metadata: $PnS
+  operation: *id002
+  statistics: {}
+  views:
+  - *id003
+- !workflow-item;4
+  channels:
+  - APC_A
+  - APC_A700_A
+  - APC_A700_H
+  - APC_A750_A
+  - APC_A750_H
+  - APC_H
+  - FITC_A
+  - FITC_H
+  - FSC_A
+  - FSC_H
+  - FSC_Width
+  - KO525_A
+  - KO525_H
+  - PB450_A
+  - PB450_H
+  - PC5_5_A
+  - PC5_5_H
+  - PE_A
+  - PE_H
+  - SSC_A
+  - SSC_H
+  - Time
+  conditions:
+    Cells_FSCA_FSCH: !pandas-series;3
+      data:
+      - false
+      - true
+      dtype: bool
+      index: !pandas-int64index;1
+        name: null
+        values:
+        - 0
+        - 1
+    Cells_FSC_SSC: !pandas-series;3
+      data:
+      - false
+      - true
+      dtype: bool
+      index: !pandas-int64index;1
+        name: null
+        values:
+        - 1
+        - 0
+    Inducer: !pandas-series;3
+      data:
+      - false
+      - true
+      dtype: bool
+      index: !pandas-int64index;1
+        name: null
+        values:
+        - 0
+        - 1
+    Line: !pandas-series;3
+      data:
+      - NF54
+      - RBC
+      - pHSP86-SV40_LacI
+      - pmRPL2-SV40_TetR
+      dtype: category
+      index: !pandas-int64index;1
+        name: null
+        values:
+        - 2
+        - 3
+        - 1
+        - 0
+    Replicate: !pandas-series;3
+      data:
+      - 0.0
+      - 1.0
+      - 2.0
+      - 3.0
+      dtype: float64
+      index: !pandas-int64index;1
+        name: null
+        values:
+        - 1
+        - 0
+        - 2
+        - 3
+    Stage: !pandas-series;3
+      data:
+      - Mix
+      - Rings
+      dtype: category
+      index: !pandas-int64index;1
+        name: null
+        values:
+        - 1
+        - 0
+    VDC_Ruby: !pandas-series;3
+      data:
+      - true
+      dtype: bool
+      index: !pandas-int64index;1
+        name: null
+        values:
+        - 0
+  current_view: &id005 !polygon-view;2
+    current_plot: null
+    huefacet: ''
+    op: &id004 !polygon;1
+      name: Cells_FSCA_FSCH
+      vertices:
+      - !!python/tuple
+        - 205003.02763107256
+        - 175940.9050875728
+      - !!python/tuple
+        - 231514.95044337836
+        - 208772.98517122687
+      - !!python/tuple
+        - 373296.1028744048
+        - 340190.7288983356
+      - !!python/tuple
+        - 442457.6406456373
+        - 393691.1823186636
+      - !!python/tuple
+        - 503550.33234355925
+        - 413908.37915246846
+      - !!python/tuple
+        - 531214.9474520523
+        - 403673.2331479716
+      - !!python/tuple
+        - 536978.4089329883
+        - 377599.9363025427
+      - !!python/tuple
+        - 528909.5628596778
+        - 350274.9796950182
+      - !!python/tuple
+        - 496634.178566436
+        - 326286.19418443384
+      - !!python/tuple
+        - 467816.8711617558
+        - 306487.6894885259
+      - !!python/tuple
+        - 426319.94849901635
+        - 283124.76690973196
+      - !!python/tuple
+        - 356005.7184315967
+        - 230765.7555204732
+      - !!python/tuple
+        - 305287.2573993596
+        - 201077.23432519793
+      - !!python/tuple
+        - 267248.41162518173
+        - 184205.66183606934
+      - !!python/tuple
+        - 240736.488812876
+        - 170875.64974491787
+      - !!python/tuple
+        - 216529.95059294463
+        - 163208.97074435718
+      xchannel: FSC_A
+      xscale: linear
+      ychannel: FSC_H
+      yscale: log
+    plot_params: !scatterplot-params;1
+      alpha: 0.005
+      col_wrap: null
+      despine: true
+      huelabel: ''
+      legend: true
+      marker: o
+      max_quantile: 1.0
+      min_quantile: 0.001
+      s: 0.5
+      sharex: true
+      sharey: true
+      sns_context: paper
+      sns_style: whitegrid
+      title: ''
+      xlabel: ''
+      xlim: !!python/tuple
+      - null
+      - 1000000.0
+      ylabel: ''
+      ylim: !!python/tuple
+      - 100000.0
+      - null
+    subset_list:
+    - !bool-subset;1
+      name: Cells_FSC_SSC
+      selected_f: false
+      selected_t: true
+      values:
+      - false
+      - true
+    - !bool-subset;1
+      name: Inducer
+      selected_f: true
+      selected_t: false
+      values:
+      - false
+      - true
+    - !category-subset;1
+      name: Line
+      selected:
+      - pmRPL2-SV40_TetR
+      - pHSP86-SV40_LacI
+      values:
+      - NF54
+      - RBC
+      - pHSP86-SV40_LacI
+      - pmRPL2-SV40_TetR
+    - !range-subset;1
+      high: 3.0
+      low: 3.0
+      name: Replicate
+      values:
+      - 0.0
+      - 1.0
+      - 2.0
+      - 3.0
+    - !category-subset;1
+      name: Stage
+      selected: []
+      values:
+      - Mix
+      - Rings
+    - !bool-subset;1
+      name: VDC_Ruby
+      selected_f: false
+      selected_t: true
+      values:
+      - true
+  metadata:
+    APC_A:
+      fcs_name: APC-A
+      range: 16777216.0
+      type: channel
+    APC_A700_A:
+      fcs_name: APC-A700-A
+      range: 16777216.0
+      type: channel
+    APC_A700_H:
+      fcs_name: APC-A700-H
+      range: 16777216.0
+      type: channel
+    APC_A750_A:
+      fcs_name: APC-A750-A
+      range: 16777216.0
+      type: channel
+    APC_A750_H:
+      fcs_name: APC-A750-H
+      range: 16777216.0
+      type: channel
+    APC_H:
+      fcs_name: APC-H
+      range: 16777216.0
+      type: channel
+    Cells_FSCA_FSCH:
+      dtype: bool
+      type: condition
+      values:
+      - 'Unpicklable: <class ''numpy.bool_''>'
+      - 'Unpicklable: <class ''numpy.bool_''>'
+      values_type: boolean
+    Cells_FSC_SSC:
+      dtype: bool
+      type: condition
+      values:
+      - 'Unpicklable: <class ''numpy.bool_''>'
+      - 'Unpicklable: <class ''numpy.bool_''>'
+      values_type: boolean
+    FITC_A:
+      fcs_name: FITC-A
+      range: 16777216.0
+      type: channel
+    FITC_H:
+      fcs_name: FITC-H
+      range: 16777216.0
+      type: channel
+    FSC_A:
+      fcs_name: FSC-A
+      range: 16777216.0
+      type: channel
+    FSC_H:
+      fcs_name: FSC-H
+      range: 16777216.0
+      type: channel
+    FSC_Width:
+      fcs_name: FSC-Width
+      range: 16777216.0
+      type: channel
+    Inducer:
+      dtype: bool
+      experiment: true
+      type: condition
+      values:
+      - 'Unpicklable: <class ''numpy.bool_''>'
+      - 'Unpicklable: <class ''numpy.bool_''>'
+      values_type: boolean
+    KO525_A:
+      fcs_name: KO525-A
+      range: 16777216.0
+      type: channel
+    KO525_H:
+      fcs_name: KO525-H
+      range: 16777216.0
+      type: channel
+    Line:
+      dtype: category
+      experiment: true
+      type: condition
+      values:
+      - NF54
+      - RBC
+      - pHSP86-SV40_LacI
+      - pmRPL2-SV40_TetR
+      values_type: categorical
+    PB450_A:
+      fcs_name: PB450-A
+      range: 16777216.0
+      type: channel
+    PB450_H:
+      fcs_name: PB450-H
+      range: 16777216.0
+      type: channel
+    PC5_5_A:
+      fcs_name: PC5.5-A
+      range: 16777216.0
+      type: channel
+    PC5_5_H:
+      fcs_name: PC5.5-H
+      range: 16777216.0
+      type: channel
+    PE_A:
+      fcs_name: PE-A
+      range: 16777216.0
+      type: channel
+    PE_H:
+      fcs_name: PE-H
+      range: 16777216.0
+      type: channel
+    Replicate:
+      dtype: float64
+      experiment: true
+      type: condition
+      values:
+      - 0.0
+      - 1.0
+      - 2.0
+      - 3.0
+      values_type: numeric
+    SSC_A:
+      fcs_name: SSC-A
+      range: 16777216.0
+      type: channel
+    SSC_H:
+      fcs_name: SSC-H
+      range: 16777216.0
+      type: channel
+    Stage:
+      dtype: category
+      experiment: true
+      type: condition
+      values:
+      - Mix
+      - Rings
+      values_type: categorical
+    Time:
+      fcs_name: Time
+      range: 900000000.0
+      type: channel
+    VDC_Ruby:
+      dtype: bool
+      experiment: true
+      type: condition
+      values:
+      - 'Unpicklable: <class ''numpy.bool_''>'
+      values_type: boolean
+    ignore_v: []
+    name_metadata: $PnS
+  operation: *id004
+  statistics: {}
+  views:
+  - *id005
+  - !kde-2d;2
+    current_plot: null
+    huefacet: ''
+    huescale: linear
+    plot_params: !kde-2d-params;1
+      bw: scott
+      col_wrap: null
+      despine: true
+      gridsize: 50
+      huelabel: ''
+      legend: true
+      max_alpha: 0.9
+      max_quantile: 1.0
+      min_alpha: 0.2
+      min_quantile: 0.001
+      n_levels: 10
+      shade: false
+      sharex: true
+      sharey: true
+      sns_context: paper
+      sns_style: whitegrid
+      title: ''
+      xlabel: ''
+      xlim: !!python/tuple
+      - null
+      - 4000000.0
+      ylabel: ''
+      ylim: &id006 !!python/tuple
+      - null
+      - null
+    plotfacet: ''
+    subset_list:
+    - !bool-subset;1
+      name: Cells_FSCA_FSCH
+      selected_f: false
+      selected_t: false
+      values: []
+    - !bool-subset;1
+      name: Inducer
+      selected_f: true
+      selected_t: false
+      values: []
+    - !category-subset;1
+      name: Line
+      selected: []
+      values:
+      - NF54
+      - RBC
+      - pHSP86-SV40_LacI
+      - pmRPL2-SV40_TetR
+    - !range-subset;1
+      high: 1.0
+      low: 0.0
+      name: Replicate
+      values:
+      - 0.0
+      - 1.0
+    - !category-subset;1
+      name: Stage
+      selected: []
+      values:
+      - Mix
+      - Rings
+    - !bool-subset;1
+      name: VDC_Ruby
+      selected_f: false
+      selected_t: true
+      values: []
+    xchannel: FSC_A
+    xfacet: ''
+    xscale: linear
+    ychannel: FSC_H
+    yfacet: ''
+    yscale: log
+  - !density-view;2
+    current_plot: null
+    huescale: linear
+    plot_params: !density-view-params;1
+      col_wrap: null
+      despine: true
+      gridsize: 500
+      huelabel: ''
+      legend: true
+      max_quantile: 1.0
+      min_quantile: 0.001
+      sharex: true
+      sharey: true
+      smoothed: false
+      smoothed_sigma: 1.0
+      sns_context: paper
+      sns_style: whitegrid
+      title: ''
+      xlabel: ''
+      xlim: !!python/tuple
+      - null
+      - 1000000.0
+      ylabel: ''
+      ylim: *id006
+    plotfacet: ''
+    subset_list:
+    - !bool-subset;1
+      name: Cells_FSCA_FSCH
+      selected_f: false
+      selected_t: false
+      values:
+      - false
+      - true
+    - !bool-subset;1
+      name: Cells_FSC_SSC
+      selected_f: false
+      selected_t: false
+      values:
+      - false
+      - true
+    - !bool-subset;1
+      name: Inducer
+      selected_f: true
+      selected_t: false
+      values:
+      - false
+      - true
+    - !category-subset;1
+      name: Line
+      selected:
+      - pHSP86-SV40_LacI
+      values:
+      - NF54
+      - RBC
+      - pHSP86-SV40_LacI
+      - pmRPL2-SV40_TetR
+    - !range-subset;1
+      high: 1.0
+      low: 0.0
+      name: Replicate
+      values:
+      - 0.0
+      - 1.0
+    - !category-subset;1
+      name: Stage
+      selected: []
+      values:
+      - Mix
+      - Rings
+    - !bool-subset;1
+      name: VDC_Ruby
+      selected_f: false
+      selected_t: true
+      values:
+      - true
+    xchannel: FSC_A
+    xfacet: ''
+    xscale: linear
+    ychannel: FSC_H
+    yfacet: ''
+    yscale: log
+  - !scatterplot;2
+    current_plot: null
+    huefacet: ''
+    huescale: linear
+    plot_params: !scatterplot-params;1
+      alpha: 0.25
+      col_wrap: null
+      despine: true
+      huelabel: ''
+      legend: true
+      marker: o
+      max_quantile: 1.0
+      min_quantile: 0.001
+      s: 2.0
+      sharex: true
+      sharey: true
+      sns_context: paper
+      sns_style: whitegrid
+      title: ''
+      xlabel: ''
+      xlim: !!python/tuple
+      - null
+      - null
+      ylabel: ''
+      ylim: !!python/tuple
+      - null
+      - null
+    plotfacet: ''
+    subset_list:
+    - !bool-subset;1
+      name: Cells_FSCA_FSCH
+      selected_f: false
+      selected_t: false
+      values: []
+    - !bool-subset;1
+      name: Cells_FSC_SSC
+      selected_f: false
+      selected_t: false
+      values: []
+    - !bool-subset;1
+      name: Inducer
+      selected_f: false
+      selected_t: false
+      values: []
+    - !category-subset;1
+      name: Line
+      selected: []
+      values:
+      - NF54
+      - RBC
+      - pHSP86-SV40_LacI
+      - pmRPL2-SV40_TetR
+    - !range-subset;1
+      high: 1.0
+      low: 0.0
+      name: Replicate
+      values:
+      - 0.0
+      - 1.0
+    - !category-subset;1
+      name: Stage
+      selected: []
+      values:
+      - Mix
+      - Rings
+    - !bool-subset;1
+      name: VDC_Ruby
+      selected_f: false
+      selected_t: false
+      values: []
+    xchannel: ''
+    xfacet: ''
+    xscale: linear
+    ychannel: ''
+    yfacet: ''
+    yscale: linear
+- !workflow-item;4
+  channels:
+  - APC_A
+  - APC_A700_A
+  - APC_A700_H
+  - APC_A750_A
+  - APC_A750_H
+  - APC_H
+  - FITC_A
+  - FITC_H
+  - FSC_A
+  - FSC_H
+  - FSC_Width
+  - KO525_A
+  - KO525_H
+  - PB450_A
+  - PB450_H
+  - PC5_5_A
+  - PC5_5_H
+  - PE_A
+  - PE_H
+  - SSC_A
+  - SSC_H
+  - Time
+  conditions:
+    Cells_FSCA_FSCH: !pandas-series;3
+      data:
+      - false
+      - true
+      dtype: bool
+      index: !pandas-int64index;1
+        name: null
+        values:
+        - 0
+        - 1
+    Cells_FSC_APC: !pandas-series;3
+      data:
+      - false
+      - true
+      dtype: bool
+      index: !pandas-int64index;1
+        name: null
+        values:
+        - 0
+        - 1
+    Cells_FSC_SSC: !pandas-series;3
+      data:
+      - false
+      - true
+      dtype: bool
+      index: !pandas-int64index;1
+        name: null
+        values:
+        - 1
+        - 0
+    Inducer: !pandas-series;3
+      data:
+      - false
+      - true
+      dtype: bool
+      index: !pandas-int64index;1
+        name: null
+        values:
+        - 0
+        - 1
+    Line: !pandas-series;3
+      data:
+      - NF54
+      - RBC
+      - pHSP86-SV40_LacI
+      - pmRPL2-SV40_TetR
+      dtype: category
+      index: !pandas-int64index;1
+        name: null
+        values:
+        - 2
+        - 3
+        - 1
+        - 0
+    Replicate: !pandas-series;3
+      data:
+      - 0.0
+      - 1.0
+      - 2.0
+      - 3.0
+      dtype: float64
+      index: !pandas-int64index;1
+        name: null
+        values:
+        - 1
+        - 0
+        - 2
+        - 3
+    Stage: !pandas-series;3
+      data:
+      - Mix
+      - Rings
+      dtype: category
+      index: !pandas-int64index;1
+        name: null
+        values:
+        - 1
+        - 0
+    VDC_Ruby: !pandas-series;3
+      data:
+      - true
+      dtype: bool
+      index: !pandas-int64index;1
+        name: null
+        values:
+        - 0
+  current_view: &id008 !polygon-view;2
+    current_plot: null
+    huefacet: Line
+    op: &id007 !polygon;1
+      name: Cells_FSC_APC
+      vertices:
+      - !!python/tuple
+        - 215448.95866997202
+        - 9476.587587122873
+      - !!python/tuple
+        - 363729.54964286234
+        - 16139.947786852079
+      - !!python/tuple
+        - 427984.4723977815
+        - 19550.243793476777
+      - !!python/tuple
+        - 502124.7678842267
+        - 19343.14888321531
+      - !!python/tuple
+        - 556494.3179076198
+        - 16842.3286252357
+      - !!python/tuple
+        - 610863.867931013
+        - 19343.14888321531
+      - !!python/tuple
+        - 724545.6543435622
+        - 21747.142807042095
+      - !!python/tuple
+        - 1105132.504507314
+        - 28684.830074243873
+      - !!python/tuple
+        - 2014586.795807708
+        - 39905.00514280461
+      - !!python/tuple
+        - 2410001.705068749
+        - 45830.269248290584
+      - !!python/tuple
+        - 3368882.860026773
+        - 70921.43709198662
+      - !!python/tuple
+        - 3368882.860026773
+        - 381529.3774252668
+      - !!python/tuple
+        - 1540088.904694459
+        - 350370.8451511515
+      - !!python/tuple
+        - 1110075.190873077
+        - 342987.23327562906
+      - !!python/tuple
+        - 838227.4407561114
+        - 301840.7840369867
+      - !!python/tuple
+        - 477411.33605541167
+        - 283157.3915447856
+      - !!python/tuple
+        - 230277.01776726107
+        - 280157.9172051662
+      - !!python/tuple
+        - 126480.60408623784
+        - 271348.7912916266
+      - !!python/tuple
+        - 101767.17225742276
+        - 15799.819286440172
+      xchannel: FSC_A
+      xscale: linear
+      ychannel: APC_A
+      yscale: log
+    plot_params: !scatterplot-params;1
+      alpha: 0.05
+      col_wrap: null
+      despine: true
+      huelabel: ''
+      legend: true
+      marker: o
+      max_quantile: 1.0
+      min_quantile: 0.001
+      s: 1.0
+      sharex: true
+      sharey: true
+      sns_context: paper
+      sns_style: whitegrid
+      title: ''
+      xlabel: ''
+      xlim: !!python/tuple
+      - null
+      - 4000000.0
+      ylabel: ''
+      ylim: !!python/tuple
+      - 100.0
+      - 1000000.0
+    subset_list:
+    - !bool-subset;1
+      name: Cells_FSCA_FSCH
+      selected_f: false
+      selected_t: false
+      values:
+      - false
+      - true
+    - !bool-subset;1
+      name: Cells_FSC_SSC
+      selected_f: false
+      selected_t: true
+      values:
+      - false
+      - true
+    - !bool-subset;1
+      name: Inducer
+      selected_f: false
+      selected_t: false
+      values:
+      - false
+      - true
+    - !category-subset;1
+      name: Line
+      selected:
+      - RBC
+      - pmRPL2-SV40_TetR
+      values:
+      - NF54
+      - RBC
+      - pHSP86-SV40_LacI
+      - pmRPL2-SV40_TetR
+    - !range-subset;1
+      high: 1.0
+      low: 0.0
+      name: Replicate
+      values:
+      - 0.0
+      - 1.0
+      - 2.0
+      - 3.0
+    - !category-subset;1
+      name: Stage
+      selected:
+      - Rings
+      - Mix
+      values:
+      - Mix
+      - Rings
+    - !bool-subset;1
+      name: VDC_Ruby
+      selected_f: false
+      selected_t: false
+      values:
+      - true
+  metadata:
+    APC_A:
+      fcs_name: APC-A
+      range: 16777216.0
+      type: channel
+    APC_A700_A:
+      fcs_name: APC-A700-A
+      range: 16777216.0
+      type: channel
+    APC_A700_H:
+      fcs_name: APC-A700-H
+      range: 16777216.0
+      type: channel
+    APC_A750_A:
+      fcs_name: APC-A750-A
+      range: 16777216.0
+      type: channel
+    APC_A750_H:
+      fcs_name: APC-A750-H
+      range: 16777216.0
+      type: channel
+    APC_H:
+      fcs_name: APC-H
+      range: 16777216.0
+      type: channel
+    Cells_FSCA_FSCH:
+      dtype: bool
+      type: condition
+      values:
+      - 'Unpicklable: <class ''numpy.bool_''>'
+      - 'Unpicklable: <class ''numpy.bool_''>'
+      values_type: boolean
+    Cells_FSC_APC:
+      dtype: bool
+      type: condition
+      values:
+      - 'Unpicklable: <class ''numpy.bool_''>'
+      - 'Unpicklable: <class ''numpy.bool_''>'
+      values_type: boolean
+    Cells_FSC_SSC:
+      dtype: bool
+      type: condition
+      values:
+      - 'Unpicklable: <class ''numpy.bool_''>'
+      - 'Unpicklable: <class ''numpy.bool_''>'
+      values_type: boolean
+    FITC_A:
+      fcs_name: FITC-A
+      range: 16777216.0
+      type: channel
+    FITC_H:
+      fcs_name: FITC-H
+      range: 16777216.0
+      type: channel
+    FSC_A:
+      fcs_name: FSC-A
+      range: 16777216.0
+      type: channel
+    FSC_H:
+      fcs_name: FSC-H
+      range: 16777216.0
+      type: channel
+    FSC_Width:
+      fcs_name: FSC-Width
+      range: 16777216.0
+      type: channel
+    Inducer:
+      dtype: bool
+      experiment: true
+      type: condition
+      values:
+      - 'Unpicklable: <class ''numpy.bool_''>'
+      - 'Unpicklable: <class ''numpy.bool_''>'
+      values_type: boolean
+    KO525_A:
+      fcs_name: KO525-A
+      range: 16777216.0
+      type: channel
+    KO525_H:
+      fcs_name: KO525-H
+      range: 16777216.0
+      type: channel
+    Line:
+      dtype: category
+      experiment: true
+      type: condition
+      values:
+      - NF54
+      - RBC
+      - pHSP86-SV40_LacI
+      - pmRPL2-SV40_TetR
+      values_type: categorical
+    PB450_A:
+      fcs_name: PB450-A
+      range: 16777216.0
+      type: channel
+    PB450_H:
+      fcs_name: PB450-H
+      range: 16777216.0
+      type: channel
+    PC5_5_A:
+      fcs_name: PC5.5-A
+      range: 16777216.0
+      type: channel
+    PC5_5_H:
+      fcs_name: PC5.5-H
+      range: 16777216.0
+      type: channel
+    PE_A:
+      fcs_name: PE-A
+      range: 16777216.0
+      type: channel
+    PE_H:
+      fcs_name: PE-H
+      range: 16777216.0
+      type: channel
+    Replicate:
+      dtype: float64
+      experiment: true
+      type: condition
+      values:
+      - 0.0
+      - 1.0
+      - 2.0
+      - 3.0
+      values_type: numeric
+    SSC_A:
+      fcs_name: SSC-A
+      range: 16777216.0
+      type: channel
+    SSC_H:
+      fcs_name: SSC-H
+      range: 16777216.0
+      type: channel
+    Stage:
+      dtype: category
+      experiment: true
+      type: condition
+      values:
+      - Mix
+      - Rings
+      values_type: categorical
+    Time:
+      fcs_name: Time
+      range: 900000000.0
+      type: channel
+    VDC_Ruby:
+      dtype: bool
+      experiment: true
+      type: condition
+      values:
+      - 'Unpicklable: <class ''numpy.bool_''>'
+      values_type: boolean
+    ignore_v: []
+    name_metadata: $PnS
+  operation: *id007
+  statistics: {}
+  views:
+  - *id008
+  - !density-view;2
+    current_plot: null
+    huescale: linear
+    plot_params: !density-view-params;1
+      col_wrap: null
+      despine: true
+      gridsize: 50
+      huelabel: ''
+      legend: true
+      max_quantile: 1.0
+      min_quantile: 0.001
+      sharex: true
+      sharey: true
+      smoothed: false
+      smoothed_sigma: 1.0
+      sns_context: paper
+      sns_style: whitegrid
+      title: ''
+      xlabel: ''
+      xlim: !!python/tuple
+      - null
+      - 4000000.0
+      ylabel: ''
+      ylim: &id009 !!python/tuple
+      - null
+      - null
+    plotfacet: ''
+    subset_list:
+    - !bool-subset;1
+      name: Cells_FSC_SSC
+      selected_f: false
+      selected_t: true
+      values:
+      - false
+      - true
+    - !bool-subset;1
+      name: Inducer
+      selected_f: false
+      selected_t: false
+      values:
+      - false
+      - true
+    - !category-subset;1
+      name: Line
+      selected: []
+      values:
+      - NF54
+      - RBC
+      - pHSP86-SV40_LacI
+      - pmRPL2-SV40_TetR
+    - !range-subset;1
+      high: 1.0
+      low: 0.0
+      name: Replicate
+      values:
+      - 0.0
+      - 1.0
+    - !category-subset;1
+      name: Stage
+      selected: []
+      values:
+      - Mix
+      - Rings
+    - !bool-subset;1
+      name: VDC_Ruby
+      selected_f: false
+      selected_t: false
+      values:
+      - false
+      - true
+    xchannel: FSC_A
+    xfacet: ''
+    xscale: linear
+    ychannel: FSC_H
+    yfacet: ''
+    yscale: log
+  - !kde-2d;2
+    current_plot: null
+    huefacet: ''
+    huescale: linear
+    plot_params: !kde-2d-params;1
+      bw: scott
+      col_wrap: null
+      despine: true
+      gridsize: 50
+      huelabel: ''
+      legend: true
+      max_alpha: 0.9
+      max_quantile: 1.0
+      min_alpha: 0.2
+      min_quantile: 0.001
+      n_levels: 10
+      shade: false
+      sharex: true
+      sharey: true
+      sns_context: paper
+      sns_style: whitegrid
+      title: ''
+      xlabel: ''
+      xlim: &id010 !!python/tuple
+      - null
+      - null
+      ylabel: ''
+      ylim: *id009
+    plotfacet: ''
+    subset_list:
+    - !bool-subset;1
+      name: Cells_FSC_SSC
+      selected_f: false
+      selected_t: true
+      values: []
+    - !bool-subset;1
+      name: Inducer
+      selected_f: false
+      selected_t: false
+      values: []
+    - !category-subset;1
+      name: Line
+      selected:
+      - pHSP86-SV40_LacI
+      - pmRPL2-SV40_TetR
+      values:
+      - NF54
+      - RBC
+      - pHSP86-SV40_LacI
+      - pmRPL2-SV40_TetR
+    - !range-subset;1
+      high: 1.0
+      low: 0.0
+      name: Replicate
+      values:
+      - 0.0
+      - 1.0
+    - !category-subset;1
+      name: Stage
+      selected: []
+      values:
+      - Mix
+      - Rings
+    - !bool-subset;1
+      name: VDC_Ruby
+      selected_f: false
+      selected_t: true
+      values: []
+    xchannel: FSC_A
+    xfacet: ''
+    xscale: linear
+    ychannel: FSC_H
+    yfacet: ''
+    yscale: log
+  - !2d-histogram;2
+    current_plot: null
+    huefacet: ''
+    huescale: linear
+    plot_params: !2d-histogram-params;1
+      col_wrap: null
+      despine: true
+      gridsize: 50
+      huelabel: ''
+      legend: true
+      max_quantile: 1.0
+      min_quantile: 0.001
+      sharex: true
+      sharey: true
+      smoothed: false
+      smoothed_sigma: 1.0
+      sns_context: paper
+      sns_style: whitegrid
+      title: ''
+      xlabel: ''
+      xlim: *id010
+      ylabel: ''
+      ylim: *id009
+    plotfacet: ''
+    subset_list:
+    - !bool-subset;1
+      name: Cells_FSC_SSC
+      selected_f: false
+      selected_t: false
+      values:
+      - false
+      - true
+    - !bool-subset;1
+      name: Inducer
+      selected_f: false
+      selected_t: false
+      values:
+      - false
+      - true
+    - !category-subset;1
+      name: Line
+      selected: []
+      values:
+      - NF54
+      - RBC
+      - pHSP86-SV40_LacI
+      - pmRPL2-SV40_TetR
+    - !range-subset;1
+      high: 1.0
+      low: 0.0
+      name: Replicate
+      values:
+      - 0.0
+      - 1.0
+    - !category-subset;1
+      name: Stage
+      selected: []
+      values:
+      - Mix
+      - Rings
+    - !bool-subset;1
+      name: VDC_Ruby
+      selected_f: false
+      selected_t: false
+      values:
+      - false
+      - true
+    xchannel: ''
+    xfacet: ''
+    xscale: linear
+    ychannel: ''
+    yfacet: ''
+    yscale: linear
+- !workflow-item;4
+  channels:
+  - APC_A
+  - APC_A700_A
+  - APC_A700_H
+  - APC_A750_A
+  - APC_A750_H
+  - APC_H
+  - FITC_A
+  - FITC_H
+  - FSC_A
+  - FSC_H
+  - FSC_Width
+  - KO525_A
+  - KO525_H
+  - PB450_A
+  - PB450_H
+  - PC5_5_A
+  - PC5_5_H
+  - PE_A
+  - PE_H
+  - SSC_A
+  - SSC_H
+  - Time
+  conditions:
+    Cells_FSCA_FSCH: !pandas-series;3
+      data:
+      - false
+      - true
+      dtype: bool
+      index: !pandas-int64index;1
+        name: null
+        values:
+        - 0
+        - 1
+    Cells_FSC_APC: !pandas-series;3
+      data:
+      - false
+      - true
+      dtype: bool
+      index: !pandas-int64index;1
+        name: null
+        values:
+        - 0
+        - 1
+    Cells_FSC_APC_2: !pandas-series;3
+      data:
+      - false
+      - true
+      dtype: bool
+      index: !pandas-int64index;1
+        name: null
+        values:
+        - 0
+        - 1
+    Cells_FSC_SSC: !pandas-series;3
+      data:
+      - false
+      - true
+      dtype: bool
+      index: !pandas-int64index;1
+        name: null
+        values:
+        - 1
+        - 0
+    Inducer: !pandas-series;3
+      data:
+      - false
+      - true
+      dtype: bool
+      index: !pandas-int64index;1
+        name: null
+        values:
+        - 0
+        - 1
+    Line: !pandas-series;3
+      data:
+      - NF54
+      - RBC
+      - pHSP86-SV40_LacI
+      - pmRPL2-SV40_TetR
+      dtype: category
+      index: !pandas-int64index;1
+        name: null
+        values:
+        - 2
+        - 3
+        - 1
+        - 0
+    Replicate: !pandas-series;3
+      data:
+      - 0.0
+      - 1.0
+      - 2.0
+      - 3.0
+      dtype: float64
+      index: !pandas-int64index;1
+        name: null
+        values:
+        - 1
+        - 0
+        - 2
+        - 3
+    Stage: !pandas-series;3
+      data:
+      - Mix
+      - Rings
+      dtype: category
+      index: !pandas-int64index;1
+        name: null
+        values:
+        - 1
+        - 0
+    VDC_Ruby: !pandas-series;3
+      data:
+      - true
+      dtype: bool
+      index: !pandas-int64index;1
+        name: null
+        values:
+        - 0
+  current_view: &id012 !histogram;2
+    channel: FITC_A
+    current_plot: null
+    huefacet: Inducer
+    huescale: linear
+    plot_params: !histogram-params;3
+      alpha: 0.5
+      col_wrap: null
+      density: false
+      despine: false
+      histtype: stepfilled
+      huelabel: ''
+      legend: false
+      lim: &id015 !!python/tuple
+      - null
+      - null
+      linestyle: solid
+      linewidth: null
+      max_quantile: 1.0
+      min_quantile: 0.001
+      num_bins: null
+      orientation: vertical
+      sharex: false
+      sharey: false
+      sns_context: talk
+      sns_style: white
+      title: ''
+      xlabel: ''
+      ylabel: ''
+    plotfacet: ''
+    scale: log
+    subset_list:
+    - !bool-subset;1
+      name: Cells_FSCA_FSCH
+      selected_f: false
+      selected_t: true
+      values: []
+    - !bool-subset;1
+      name: Cells_FSC_APC
+      selected_f: false
+      selected_t: false
+      values: []
+    - !bool-subset;1
+      name: Cells_FSC_APC_2
+      selected_f: false
+      selected_t: true
+      values: []
+    - !bool-subset;1
+      name: Cells_FSC_SSC
+      selected_f: false
+      selected_t: true
+      values: []
+    - !bool-subset;1
+      name: Inducer
+      selected_f: false
+      selected_t: false
+      values: []
+    - !category-subset;1
+      name: Line
+      selected:
+      - pHSP86-SV40_LacI
+      - pmRPL2-SV40_TetR
+      values:
+      - NF54
+      - RBC
+      - pHSP86-SV40_LacI
+      - pmRPL2-SV40_TetR
+    - !range-subset;1
+      high: 3.0
+      low: 0.0
+      name: Replicate
+      values:
+      - 0.0
+      - 1.0
+      - 2.0
+      - 3.0
+    - !category-subset;1
+      name: Stage
+      selected: []
+      values:
+      - Mix
+      - Rings
+    - !bool-subset;1
+      name: VDC_Ruby
+      selected_f: false
+      selected_t: true
+      values: []
+    xfacet: ''
+    yfacet: Line
+  metadata:
+    APC_A:
+      fcs_name: APC-A
+      range: 16777216.0
+      type: channel
+    APC_A700_A:
+      fcs_name: APC-A700-A
+      range: 16777216.0
+      type: channel
+    APC_A700_H:
+      fcs_name: APC-A700-H
+      range: 16777216.0
+      type: channel
+    APC_A750_A:
+      fcs_name: APC-A750-A
+      range: 16777216.0
+      type: channel
+    APC_A750_H:
+      fcs_name: APC-A750-H
+      range: 16777216.0
+      type: channel
+    APC_H:
+      fcs_name: APC-H
+      range: 16777216.0
+      type: channel
+    Cells_FSCA_FSCH:
+      dtype: bool
+      type: condition
+      values:
+      - 'Unpicklable: <class ''numpy.bool_''>'
+      - 'Unpicklable: <class ''numpy.bool_''>'
+      values_type: boolean
+    Cells_FSC_APC:
+      dtype: bool
+      type: condition
+      values:
+      - 'Unpicklable: <class ''numpy.bool_''>'
+      - 'Unpicklable: <class ''numpy.bool_''>'
+      values_type: boolean
+    Cells_FSC_APC_2:
+      dtype: bool
+      type: condition
+      values:
+      - 'Unpicklable: <class ''numpy.bool_''>'
+      - 'Unpicklable: <class ''numpy.bool_''>'
+      values_type: boolean
+    Cells_FSC_SSC:
+      dtype: bool
+      type: condition
+      values:
+      - 'Unpicklable: <class ''numpy.bool_''>'
+      - 'Unpicklable: <class ''numpy.bool_''>'
+      values_type: boolean
+    FITC_A:
+      fcs_name: FITC-A
+      range: 16777216.0
+      type: channel
+    FITC_H:
+      fcs_name: FITC-H
+      range: 16777216.0
+      type: channel
+    FSC_A:
+      fcs_name: FSC-A
+      range: 16777216.0
+      type: channel
+    FSC_H:
+      fcs_name: FSC-H
+      range: 16777216.0
+      type: channel
+    FSC_Width:
+      fcs_name: FSC-Width
+      range: 16777216.0
+      type: channel
+    Inducer:
+      dtype: bool
+      experiment: true
+      type: condition
+      values:
+      - 'Unpicklable: <class ''numpy.bool_''>'
+      - 'Unpicklable: <class ''numpy.bool_''>'
+      values_type: boolean
+    KO525_A:
+      fcs_name: KO525-A
+      range: 16777216.0
+      type: channel
+    KO525_H:
+      fcs_name: KO525-H
+      range: 16777216.0
+      type: channel
+    Line:
+      dtype: category
+      experiment: true
+      type: condition
+      values:
+      - NF54
+      - RBC
+      - pHSP86-SV40_LacI
+      - pmRPL2-SV40_TetR
+      values_type: categorical
+    PB450_A:
+      fcs_name: PB450-A
+      range: 16777216.0
+      type: channel
+    PB450_H:
+      fcs_name: PB450-H
+      range: 16777216.0
+      type: channel
+    PC5_5_A:
+      fcs_name: PC5.5-A
+      range: 16777216.0
+      type: channel
+    PC5_5_H:
+      fcs_name: PC5.5-H
+      range: 16777216.0
+      type: channel
+    PE_A:
+      fcs_name: PE-A
+      range: 16777216.0
+      type: channel
+    PE_H:
+      fcs_name: PE-H
+      range: 16777216.0
+      type: channel
+    Replicate:
+      dtype: float64
+      experiment: true
+      type: condition
+      values:
+      - 0.0
+      - 1.0
+      - 2.0
+      - 3.0
+      values_type: numeric
+    SSC_A:
+      fcs_name: SSC-A
+      range: 16777216.0
+      type: channel
+    SSC_H:
+      fcs_name: SSC-H
+      range: 16777216.0
+      type: channel
+    Stage:
+      dtype: category
+      experiment: true
+      type: condition
+      values:
+      - Mix
+      - Rings
+      values_type: categorical
+    Time:
+      fcs_name: Time
+      range: 900000000.0
+      type: channel
+    VDC_Ruby:
+      dtype: bool
+      experiment: true
+      type: condition
+      values:
+      - 'Unpicklable: <class ''numpy.bool_''>'
+      values_type: boolean
+    ignore_v: []
+    name_metadata: $PnS
+  operation: &id011 !polygon;1
+    name: Cells_FSC_APC_2
+    vertices:
+    - !!python/tuple
+      - 205563.585938446
+      - 9081.382524772669
+    - !!python/tuple
+      - 343958.8041798103
+      - 11000.236474479503
+    - !!python/tuple
+      - 551551.6315418568
+      - 15968.977998758824
+    - !!python/tuple
+      - 892596.9907795044
+      - 22693.53845831562
+    - !!python/tuple
+      - 1485719.354671066
+      - 31908.20035852759
+    - !!python/tuple
+      - 3077264.3644467555
+      - 57929.85911204758
+    - !!python/tuple
+      - 3739584.337458999
+      - 71680.74824338456
+    - !!python/tuple
+      - 3695100.1601671316
+      - 472093.52257837984
+    - !!python/tuple
+      - 1495604.7274025918
+      - 385614.17213253106
+    - !!python/tuple
+      - 778915.2043669552
+      - 305072.40317308466
+    - !!python/tuple
+      - 477411.33605541167
+      - 286188.97936669964
+    - !!python/tuple
+      - 175907.46774386795
+      - 280157.9172051662
+    - !!python/tuple
+      - 146251.34954928985
+      - 27488.57773617639
+    xchannel: FSC_A
+    xscale: linear
+    ychannel: APC_A
+    yscale: log
+  statistics: {}
+  views:
+  - !polygon-view;2
+    current_plot: null
+    huefacet: Line
+    op: *id011
+    plot_params: !scatterplot-params;1
+      alpha: 0.05
+      col_wrap: null
+      despine: true
+      huelabel: ''
+      legend: true
+      marker: o
+      max_quantile: 1.0
+      min_quantile: 0.001
+      s: 1.0
+      sharex: true
+      sharey: true
+      sns_context: paper
+      sns_style: whitegrid
+      title: ''
+      xlabel: ''
+      xlim: !!python/tuple
+      - null
+      - 4000000.0
+      ylabel: ''
+      ylim: !!python/tuple
+      - 100.0
+      - 1000000.0
+    subset_list:
+    - !bool-subset;1
+      name: Cells_FSCA_FSCH
+      selected_f: false
+      selected_t: false
+      values:
+      - false
+      - true
+    - !bool-subset;1
+      name: Cells_FSC_APC
+      selected_f: false
+      selected_t: false
+      values:
+      - false
+      - true
+    - !bool-subset;1
+      name: Cells_FSC_SSC
+      selected_f: false
+      selected_t: true
+      values:
+      - false
+      - true
+    - !bool-subset;1
+      name: Inducer
+      selected_f: false
+      selected_t: false
+      values:
+      - false
+      - true
+    - !category-subset;1
+      name: Line
+      selected:
+      - pmRPL2-SV40_TetR
+      - pHSP86-SV40_LacI
+      values:
+      - NF54
+      - RBC
+      - pHSP86-SV40_LacI
+      - pmRPL2-SV40_TetR
+    - !range-subset;1
+      high: 3.0
+      low: 3.0
+      name: Replicate
+      values:
+      - 0.0
+      - 1.0
+      - 2.0
+      - 3.0
+    - !category-subset;1
+      name: Stage
+      selected: []
+      values:
+      - Mix
+      - Rings
+    - !bool-subset;1
+      name: VDC_Ruby
+      selected_f: false
+      selected_t: false
+      values:
+      - true
+  - !scatterplot;2
+    current_plot: null
+    huefacet: Inducer
+    huescale: linear
+    plot_params: !scatterplot-params;1
+      alpha: 0.25
+      col_wrap: null
+      despine: true
+      huelabel: ''
+      legend: true
+      marker: o
+      max_quantile: 1.0
+      min_quantile: 0.001
+      s: 2.0
+      sharex: true
+      sharey: true
+      sns_context: paper
+      sns_style: whitegrid
+      title: ''
+      xlabel: ''
+      xlim: !!python/tuple
+      - null
+      - null
+      ylabel: ''
+      ylim: !!python/tuple
+      - null
+      - null
+    plotfacet: ''
+    subset_list:
+    - !bool-subset;1
+      name: Cells_FSCA_FSCH
+      selected_f: false
+      selected_t: true
+      values: []
+    - !bool-subset;1
+      name: Cells_FSC_APC
+      selected_f: false
+      selected_t: false
+      values: []
+    - !bool-subset;1
+      name: Cells_FSC_APC_2
+      selected_f: false
+      selected_t: true
+      values: []
+    - !bool-subset;1
+      name: Cells_FSC_SSC
+      selected_f: false
+      selected_t: true
+      values: []
+    - !bool-subset;1
+      name: Inducer
+      selected_f: false
+      selected_t: false
+      values: []
+    - !category-subset;1
+      name: Line
+      selected:
+      - pHSP86-SV40_LacI
+      - pmRPL2-SV40_TetR
+      values:
+      - NF54
+      - RBC
+      - pHSP86-SV40_LacI
+      - pmRPL2-SV40_TetR
+    - !range-subset;1
+      high: 1.0
+      low: 0.0
+      name: Replicate
+      values:
+      - 0.0
+      - 1.0
+    - !category-subset;1
+      name: Stage
+      selected: []
+      values:
+      - Mix
+      - Rings
+    - !bool-subset;1
+      name: VDC_Ruby
+      selected_f: false
+      selected_t: false
+      values: []
+    xchannel: FITC_A
+    xfacet: Line
+    xscale: log
+    ychannel: APC_A
+    yfacet: ''
+    yscale: log
+  - !kde-1d;2
+    channel: FITC_H
+    current_plot: null
+    huefacet: Inducer
+    huescale: linear
+    plot_params: !kde-1d-params;1
+      alpha: 0.25
+      bw: scott
+      col_wrap: null
+      despine: false
+      gridsize: 100
+      huelabel: ''
+      kernel: gaussian
+      legend: true
+      lim: &id013 !!python/tuple
+      - null
+      - null
+      linestyle: solid
+      linewidth: 2.0
+      max_quantile: 1.0
+      min_quantile: 0.001
+      orientation: vertical
+      shade: true
+      sharex: false
+      sharey: false
+      sns_context: talk
+      sns_style: white
+      title: ''
+      xlabel: ''
+      ylabel: ''
+    plotfacet: ''
+    scale: log
+    subset_list:
+    - !bool-subset;1
+      name: Cells_FSCA_FSCH
+      selected_f: false
+      selected_t: true
+      values:
+      - false
+      - true
+    - !bool-subset;1
+      name: Cells_FSC_APC
+      selected_f: false
+      selected_t: false
+      values:
+      - false
+      - true
+    - !bool-subset;1
+      name: Cells_FSC_APC_2
+      selected_f: false
+      selected_t: true
+      values:
+      - false
+      - true
+    - !bool-subset;1
+      name: Cells_FSC_SSC
+      selected_f: false
+      selected_t: true
+      values:
+      - false
+      - true
+    - !bool-subset;1
+      name: Inducer
+      selected_f: false
+      selected_t: false
+      values:
+      - false
+      - true
+    - !category-subset;1
+      name: Line
+      selected:
+      - pmRPL2-SV40_TetR
+      - pHSP86-SV40_LacI
+      values:
+      - NF54
+      - RBC
+      - pHSP86-SV40_LacI
+      - pmRPL2-SV40_TetR
+    - !range-subset;1
+      high: 3.0
+      low: 0.0
+      name: Replicate
+      values:
+      - 0.0
+      - 1.0
+      - 2.0
+      - 3.0
+    - !category-subset;1
+      name: Stage
+      selected: []
+      values:
+      - Mix
+      - Rings
+    - !bool-subset;1
+      name: VDC_Ruby
+      selected_f: false
+      selected_t: false
+      values:
+      - true
+    xfacet: ''
+    yfacet: Line
+  - *id012
+- !workflow-item;4
+  channels:
+  - APC_A
+  - APC_A700_A
+  - APC_A700_H
+  - APC_A750_A
+  - APC_A750_H
+  - APC_H
+  - FITCH_PEA
+  - FITC_A
+  - FITC_H
+  - FSC_A
+  - FSC_H
+  - FSC_Width
+  - KO525_A
+  - KO525_H
+  - PB450_A
+  - PB450_H
+  - PC5_5_A
+  - PC5_5_H
+  - PE_A
+  - PE_H
+  - SSC_A
+  - SSC_H
+  - Time
+  conditions:
+    Cells_FSCA_FSCH: !pandas-series;3
+      data:
+      - false
+      - true
+      dtype: bool
+      index: !pandas-int64index;1
+        name: null
+        values:
+        - 0
+        - 1
+    Cells_FSC_APC: !pandas-series;3
+      data:
+      - false
+      - true
+      dtype: bool
+      index: !pandas-int64index;1
+        name: null
+        values:
+        - 0
+        - 1
+    Cells_FSC_APC_2: !pandas-series;3
+      data:
+      - false
+      - true
+      dtype: bool
+      index: !pandas-int64index;1
+        name: null
+        values:
+        - 0
+        - 1
+    Cells_FSC_SSC: !pandas-series;3
+      data:
+      - false
+      - true
+      dtype: bool
+      index: !pandas-int64index;1
+        name: null
+        values:
+        - 1
+        - 0
+    Inducer: !pandas-series;3
+      data:
+      - false
+      - true
+      dtype: bool
+      index: !pandas-int64index;1
+        name: null
+        values:
+        - 0
+        - 1
+    Line: !pandas-series;3
+      data:
+      - NF54
+      - RBC
+      - pHSP86-SV40_LacI
+      - pmRPL2-SV40_TetR
+      dtype: category
+      index: !pandas-int64index;1
+        name: null
+        values:
+        - 2
+        - 3
+        - 1
+        - 0
+    Replicate: !pandas-series;3
+      data:
+      - 0.0
+      - 1.0
+      - 2.0
+      - 3.0
+      dtype: float64
+      index: !pandas-int64index;1
+        name: null
+        values:
+        - 1
+        - 0
+        - 2
+        - 3
+    Stage: !pandas-series;3
+      data:
+      - Mix
+      - Rings
+      dtype: category
+      index: !pandas-int64index;1
+        name: null
+        values:
+        - 1
+        - 0
+    VDC_Ruby: !pandas-series;3
+      data:
+      - true
+      dtype: bool
+      index: !pandas-int64index;1
+        name: null
+        values:
+        - 0
+  current_view: &id014 !kde-1d;2
+    channel: FITCH_PEA
+    current_plot: null
+    huefacet: Inducer
+    huescale: linear
+    plot_params: !kde-1d-params;1
+      alpha: 0.25
+      bw: scott
+      col_wrap: null
+      despine: true
+      gridsize: 100
+      huelabel: ''
+      kernel: gaussian
+      legend: true
+      lim: *id013
+      linestyle: solid
+      linewidth: 2.0
+      max_quantile: 1.0
+      min_quantile: 0.001
+      orientation: vertical
+      shade: true
+      sharex: true
+      sharey: true
+      sns_context: paper
+      sns_style: whitegrid
+      title: ''
+      xlabel: ''
+      ylabel: ''
+    plotfacet: ''
+    scale: log
+    subset_list:
+    - !bool-subset;1
+      name: Cells_FSCA_FSCH
+      selected_f: false
+      selected_t: true
+      values:
+      - false
+      - true
+    - !bool-subset;1
+      name: Cells_FSC_APC
+      selected_f: false
+      selected_t: false
+      values:
+      - false
+      - true
+    - !bool-subset;1
+      name: Cells_FSC_APC_2
+      selected_f: false
+      selected_t: true
+      values:
+      - false
+      - true
+    - !bool-subset;1
+      name: Cells_FSC_SSC
+      selected_f: false
+      selected_t: true
+      values:
+      - false
+      - true
+    - !bool-subset;1
+      name: Inducer
+      selected_f: false
+      selected_t: false
+      values:
+      - false
+      - true
+    - !category-subset;1
+      name: Line
+      selected:
+      - pHSP86-SV40_LacI
+      - pmRPL2-SV40_TetR
+      values:
+      - NF54
+      - RBC
+      - pHSP86-SV40_LacI
+      - pmRPL2-SV40_TetR
+    - !range-subset;1
+      high: 1.0
+      low: 0.0
+      name: Replicate
+      values:
+      - 0.0
+      - 1.0
+      - 2.0
+      - 3.0
+    - !category-subset;1
+      name: Stage
+      selected: []
+      values:
+      - Mix
+      - Rings
+    - !bool-subset;1
+      name: VDC_Ruby
+      selected_f: false
+      selected_t: false
+      values:
+      - true
+    xfacet: ''
+    yfacet: Line
+  metadata:
+    APC_A:
+      fcs_name: APC-A
+      range: 16777216.0
+      type: channel
+    APC_A700_A:
+      fcs_name: APC-A700-A
+      range: 16777216.0
+      type: channel
+    APC_A700_H:
+      fcs_name: APC-A700-H
+      range: 16777216.0
+      type: channel
+    APC_A750_A:
+      fcs_name: APC-A750-A
+      range: 16777216.0
+      type: channel
+    APC_A750_H:
+      fcs_name: APC-A750-H
+      range: 16777216.0
+      type: channel
+    APC_H:
+      fcs_name: APC-H
+      range: 16777216.0
+      type: channel
+    Cells_FSCA_FSCH:
+      dtype: bool
+      type: condition
+      values:
+      - 'Unpicklable: <class ''numpy.bool_''>'
+      - 'Unpicklable: <class ''numpy.bool_''>'
+      values_type: boolean
+    Cells_FSC_APC:
+      dtype: bool
+      type: condition
+      values:
+      - 'Unpicklable: <class ''numpy.bool_''>'
+      - 'Unpicklable: <class ''numpy.bool_''>'
+      values_type: boolean
+    Cells_FSC_APC_2:
+      dtype: bool
+      type: condition
+      values:
+      - 'Unpicklable: <class ''numpy.bool_''>'
+      - 'Unpicklable: <class ''numpy.bool_''>'
+      values_type: boolean
+    Cells_FSC_SSC:
+      dtype: bool
+      type: condition
+      values:
+      - 'Unpicklable: <class ''numpy.bool_''>'
+      - 'Unpicklable: <class ''numpy.bool_''>'
+      values_type: boolean
+    FITCH_PEA:
+      denominator: PE_A
+      numerator: FITC_H
+      type: channel
+    FITC_A:
+      fcs_name: FITC-A
+      range: 16777216.0
+      type: channel
+    FITC_H:
+      fcs_name: FITC-H
+      range: 16777216.0
+      type: channel
+    FSC_A:
+      fcs_name: FSC-A
+      range: 16777216.0
+      type: channel
+    FSC_H:
+      fcs_name: FSC-H
+      range: 16777216.0
+      type: channel
+    FSC_Width:
+      fcs_name: FSC-Width
+      range: 16777216.0
+      type: channel
+    Inducer:
+      dtype: bool
+      experiment: true
+      type: condition
+      values:
+      - 'Unpicklable: <class ''numpy.bool_''>'
+      - 'Unpicklable: <class ''numpy.bool_''>'
+      values_type: boolean
+    KO525_A:
+      fcs_name: KO525-A
+      range: 16777216.0
+      type: channel
+    KO525_H:
+      fcs_name: KO525-H
+      range: 16777216.0
+      type: channel
+    Line:
+      dtype: category
+      experiment: true
+      type: condition
+      values:
+      - NF54
+      - RBC
+      - pHSP86-SV40_LacI
+      - pmRPL2-SV40_TetR
+      values_type: categorical
+    PB450_A:
+      fcs_name: PB450-A
+      range: 16777216.0
+      type: channel
+    PB450_H:
+      fcs_name: PB450-H
+      range: 16777216.0
+      type: channel
+    PC5_5_A:
+      fcs_name: PC5.5-A
+      range: 16777216.0
+      type: channel
+    PC5_5_H:
+      fcs_name: PC5.5-H
+      range: 16777216.0
+      type: channel
+    PE_A:
+      fcs_name: PE-A
+      range: 16777216.0
+      type: channel
+    PE_H:
+      fcs_name: PE-H
+      range: 16777216.0
+      type: channel
+    Replicate:
+      dtype: float64
+      experiment: true
+      type: condition
+      values:
+      - 0.0
+      - 1.0
+      - 2.0
+      - 3.0
+      values_type: numeric
+    SSC_A:
+      fcs_name: SSC-A
+      range: 16777216.0
+      type: channel
+    SSC_H:
+      fcs_name: SSC-H
+      range: 16777216.0
+      type: channel
+    Stage:
+      dtype: category
+      experiment: true
+      type: condition
+      values:
+      - Mix
+      - Rings
+      values_type: categorical
+    Time:
+      fcs_name: Time
+      range: 900000000.0
+      type: channel
+    VDC_Ruby:
+      dtype: bool
+      experiment: true
+      type: condition
+      values:
+      - 'Unpicklable: <class ''numpy.bool_''>'
+      values_type: boolean
+    ignore_v: []
+    name_metadata: $PnS
+  operation: !ratio;1
+    denominator: PE_A
+    name: FITCH_PEA
+    numerator: FITC_H
+  statistics: {}
+  views:
+  - *id014
+  - !histogram;2
+    channel: ''
+    current_plot: null
+    huefacet: ''
+    huescale: linear
+    plot_params: !histogram-params;3
+      alpha: 0.5
+      col_wrap: null
+      density: false
+      despine: true
+      histtype: stepfilled
+      huelabel: ''
+      legend: true
+      lim: *id015
+      linestyle: solid
+      linewidth: null
+      max_quantile: 1.0
+      min_quantile: 0.001
+      num_bins: null
+      orientation: vertical
+      sharex: true
+      sharey: true
+      sns_context: paper
+      sns_style: whitegrid
+      title: ''
+      xlabel: ''
+      ylabel: ''
+    plotfacet: ''
+    scale: linear
+    subset_list:
+    - !bool-subset;1
+      name: Cells_FSCA_FSCH
+      selected_f: false
+      selected_t: false
+      values: []
+    - !bool-subset;1
+      name: Cells_FSC_APC
+      selected_f: false
+      selected_t: false
+      values: []
+    - !bool-subset;1
+      name: Cells_FSC_APC_2
+      selected_f: false
+      selected_t: false
+      values: []
+    - !bool-subset;1
+      name: Cells_FSC_SSC
+      selected_f: false
+      selected_t: false
+      values: []
+    - !bool-subset;1
+      name: Inducer
+      selected_f: false
+      selected_t: false
+      values: []
+    - !category-subset;1
+      name: Line
+      selected: []
+      values:
+      - NF54
+      - RBC
+      - pHSP86-SV40_LacI
+      - pmRPL2-SV40_TetR
+    - !range-subset;1
+      high: 3.0
+      low: 0.0
+      name: Replicate
+      values:
+      - 0.0
+      - 1.0
+      - 2.0
+      - 3.0
+    - !category-subset;1
+      name: Stage
+      selected: []
+      values:
+      - Mix
+      - Rings
+    - !bool-subset;1
+      name: VDC_Ruby
+      selected_f: false
+      selected_t: false
+      values: []
+    xfacet: ''
+    yfacet: ''

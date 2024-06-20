@@ -1,0 +1,46 @@
+Name,Parent Plasmid,Antibiotic,Description
+pPC000,pSG372,Kanamycin,"HSP-Rluc, PfCAM-Fluc, no aptamer. Same as pSG372, but aptamer cut out."
+pPC002,pSG372,Kanamycin,"pSG372 with 2x tetO array from Mahesri plasmid downstream of promoter, with 5' aptamer "
+pPC003,pSG372,Kanamycin,"pSG372 with 4x tetO array from Mahesri plasmid downstream of promoter, with 5' aptamer "
+pPC004,pSG372,Kanamycin,"pSG372 with 8x tetO array from Mahesri plasmid downstream of promoter, with 5' aptamer "
+pPC005,pSG372,Kanamycin,"pSG372 with 11x tetO array from Mahesri plasmid downstream of promoter, with 5' aptamer "
+pPC007,pSG372,Kanamycin,"pSG372 with 2x tetO array from Mahesri plasmid downstream of promoter, without 5' aptamer "
+pPC008,pSG372,Kanamycin,"pSG372 with 4x tetO array from Mahesri plasmid downstream of promoter, without 5' aptamer "
+pPC009,pSG372,Kanamycin,"pSG372 with 8x tetO array from Mahesri plasmid downstream of promoter, without 5' aptamer "
+pPC010,pSG372,Kanamycin,"pSG372 with 11x tetO array from Mahesri plasmid downstream of promoter, without 5' aptamer "
+pPC011,pPC000,Kanamycin,"pPC000 with cytoplasmic Cypridina luciferase (CLuc) instead of FLuc, an SV40 signal at the start with a unique BamHI site, and a new unique XmaI site at the end of the tetR CDS. CLuc was found not to function in P. falciparum. High expression of SV40_TetR was found to be toxic in absence of inducer."
+pPC012,pPC011,Kanamycin,pPC011 with 8x tetO array from Mahesri plasmid downstream of promoter. CLuc was found not to function in P. falciparum. High expression of SV40_TetR was found to be toxic in absence of inducer.
+pPC013,pPC011,Kanamycin,"pPC011 with 8x compact tetO array downstream of promoter, unnecessary XhoI cut site before operator array (besides after). CLuc was found not to function in P. falciparum. High expression of SV40_TetR was found to be toxic in absence of inducer."
+pPC023,pPC011,Kanamycin,pPC011 with 8x compact tetO array downstream of promoter (same as pPC013 but without unnecessary XhoI cut site before operator array). CLuc was found not to function in P. falciparum. High expression of SV40_TetR was found to be toxic in absence of inducer.
+pPC029,pPC013,Kanamycin,pPC013 with full-length CLuc (including the wild-type secretion signal). CLuc was found not to function in P. falciparum. High expression of SV40_TetR was found to be toxic in absence of inducer.
+pPC030,pPC011,Kanamycin,pPC011 with FLuc (including ATG) instead of CLuc. High expression of SV40_TetR was found to be toxic in absence of inducer.
+pPC031,pPC012,Kanamycin,pPC012 with FLuc (including ATG) instead of CLuc. High expression of SV40_TetR was found to be toxic in absence of inducer.
+pPC032,pPC023,Kanamycin,pPC023 with FLuc (including ATG) instead of CLuc. High expression of SV40_TetR was found to be toxic in absence of inducer.
+pPC038,pPC032,Kanamycin,"pPC032 with lacI instead of tetR and 8x compact operator array with a mix of lacO and Osys sequences downstream of promoter; requires IPTG to clone, array is unstable—grow at 30 ºC to be safe. A more stable array was developed later (pPC089)."
+pPC039,pPC032,Kanamycin,pPC032 with cymR instead of tetR and 8x compact CymR operator array downstream of promoter
+pPC040,pPC032,Kanamycin,pPC032 with phlF instead of tetR and 8x compact PhlF operator array downstream of promoter (contains ATGs and stop codons in operator array). Operators mutated to have no stop codons and a T2A peptide added between operator array and CLuc.
+pPC041,pPC032,Kanamycin,pPC032 with phlF instead of tetR and 8x compact PhlF operator array downstream of promoter (contains ATGs and stop codons in operator array). Operators mutated to have no start codons.
+pPC070,pPC032,Kanamycin,pPC032 with no SV40
+pPC071,pPC032,Kanamycin,pPC032 with mRPL2 promoter on SV40_TetR-RLuc-BSD instead of HSP86 promoter
+pPC072,pPC032,Kanamycin,pPC032 with TetR-Sir2A instead of SV40_TetR
+pPC082,pPC031,Kanamycin,pmRPL2-SV40_TetR_Sir2a operating on pCAM-extended 8x tetO
+pPC083,pPC082,Kanamycin,pmRPL2-SV40_TetR_Sir2a operating on pCAM-extended 11x tetO
+pPC088,pPC038,Kanamycin,pPC038 but with 4x extended lacO array (1 Osys)
+pPC089,pPC038,Kanamycin,pPC038 but with 8x extended lacO array (1 Osys)
+pPC094,pPC071,Kanamycin,pPC071 with PfCRT promoter instead of PfCAM
+pPC095,pPC071,Kanamycin,pPC071 with PcDT (AMA1) promoter instead of PfCAM
+pPC096,pPC071,Kanamycin,pPC071 with BiP1_PB (HSP70) promoter instead of PfCAM
+pPC097,pPC071,Kanamycin,pPC071 with EF1alpha (PF3D7_1357000/PF3D7_1357100) promoter instead of PfCAM
+pPC098,pPC071,Kanamycin,pPC071 with mNeonGreen instead of FLuc
+pPC099,pPC089,Kanamycin,pPC089 with mNeonGreen instead of FLuc
+pPC101,pSN150,Chloramphenicol,"pPC089 with no FLuc moved into a linear pSN150 context (derived from pJAZZ, see Nasamu et al. 2020). Base plasmid for native gene regulation."
+pPC111,pPC089,Kanamycin,pPC089 with PfCRT promoter instead of PfCAM
+pPC112,pPC089,Kanamycin,pPC089 with PcDT (AMA1) promoter instead of PfCAM
+pPC113,pPC089,Kanamycin,pPC089 with BiP1_PB (HSP70) promoter instead of PfCAM
+pPC114,pPC089,Kanamycin,pPC089 with EF1alpha (PF3D7_1357000/PF3D7_1357100) promoter instead of PfCAM
+pPC119,pPC030,Kanamycin,pPC030 with the SV40 NLS tag removed
+pPC120,pPC071,Kanamycin,pPC071 with no tetO array
+pPC121,pPC089,Kanamycin,pPC089 with no lacO array
+pPC126,pPC121,Kanamycin,pPC121 with 3' 8x lacO
+pPC127,pPC101,Chloramphenicol,pPC101 with LHR and RR+RHR+gRNA inserted for PI3K control (PF3D7_0515300)
+pPC129,pPC101,Chloramphenicol,pPC101 with LHR and RR+RHR (232 bp)+gRNA inserted for PI4K control (PF3D7_0509800)
