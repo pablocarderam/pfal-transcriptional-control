@@ -44,3 +44,4 @@ pPC121,pPC089,Kanamycin,pPC089 with no lacO array
 pPC126,pPC121,Kanamycin,pPC121 with 3' 8x lacO
 pPC127,pPC101,Chloramphenicol,pPC101 with LHR and RR+RHR+gRNA inserted for PI3K control (PF3D7_0515300)
 pPC129,pPC101,Chloramphenicol,pPC101 with LHR and RR+RHR (232 bp)+gRNA inserted for PI4K control (PF3D7_0509800)
+pPC150,pPC101,Chloramphenicol,pPC101 with LHR and RR+RHR (232 bp)+gRNA inserted for Kelch13 control (PF3D7_1343700)
