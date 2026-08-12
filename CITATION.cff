@@ -1,0 +1,9 @@
+cff-version: 1.1.0
+message: "If you use this code, please cite it as below."
+authors:
+- family-names: Cárdenas Ramírez
+  given-names: Pablo
+orcid: https://orcid.org/0000-0001-7015-0512
+title: Synthetic transcriptional control in the malaria parasite Plasmodium falciparum
+version: v1.2.1
+date-released: 2026-08-12
